@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Adjaratou Seydou</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header>
+        <div class="Portfolio">
+            <img src= "Adjara.jpg" alt="Adjaratou Seydou" class="PROFIL-image"/> 
+            <h1>Adjaratou Seydou</h1> 
+            <p>Fondatrice de Mon Choix Ma Carrière</p>
+         </div>
+        <nav>
+            <div class="nav-list">
+                <a href="#Accueil">Accueil</a>
+                <a href="#À propos">À propos</a>
+                <a href="#Compétences">Compétences</a>
+                <a href="#Projets">Projets</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#activités-sportives">Activités sportives</a>
+                <a href="#formulaire">Formulaire de demande d’information</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="À propos">
+            <h2>Qui suis-je ?</h2>
+            <p>Je m'appelle Adjaratou Seydou, Fondatrice de Mon Choix Ma Carrière. Gestionnaire des ressources humaines de formation, j’ai trois ans d'expérience dans les domaines suivants : Gestion de projets, chargée de communication, responsable client, assistante administrative.</p>
+        </section>
+
+        <section id="Compétences">      
+            <h3>Compétences</h3>
+            <ul>
+                <li>Développement web (débutant)</li>
+                <li>Microsoft Office : Word, Excel, PowerPoint, Outlook, réseaux sociaux</li>
+                <li>Logiciel de création visuelle : Canva (niveau avancé), Photoshop (débutant)</li>
+                <li>Montage vidéo (CapCut)</li>
+            </ul>
+            <p>Faites un tour sur mon premier site HTML <a href="https://codepen.io/ADJARA-SEYDOU/details/WNVRRrv">Mon premier site web HTML</a>.</p>
+        </section>
+
+        <section id="Projets">
+            <h3>Projets</h3>
+            <p>Fondatrice de Mon Choix Ma Carrière, une plateforme d'orientation scolaire qui informe et assiste les élèves dans le choix de leur cursus scolaire. Mes responsabilités incluent : 
+                <ul>
+                    <li>Création et montage du projet</li>
+                    <li>Coordination du projet</li>
+                    <li>Gestion et animation des réseaux sociaux (Facebook : Mon Choix Ma Carrière)</li>
+                    <li>Lobbying</li>
+                    <li>Mobilisation des ressources</li>
+                </ul>
+            </p>
+            <p>Faites un tour sur notre page Facebook <a href="https://www.facebook.com/monchoixmacarriere">Page Facebook</a>.</p>
+            <p>Visitez notre blog <a href="http://monchoixmacarriere.home.blog/">Blog</a>.</p>
+        </section>
+
+        <section id="formulaire">
+            <h2>Formulaire de contact</h2>
+            <form id="contactForm">
+                <label for="nom">Votre nom :</label>
+                <input type="text" id="nom" required>
+                
+                <label for="email">Adresse e-mail :</label>
+                <input type="email" id="email" required>
+                
+                <label for="message">Message :</label>
+                <textarea id="message" required></textarea>
+                
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+
+<script>
+     document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Empêche l'envoi par défaut du formulaire
+        
+        const nom = document.getElementById('nom').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        alert(`Nom: ${nom}\nEmail: ${email}\nMessage: ${message}`);
+    });
+});
+
+</script>
+</body>
+</html>
